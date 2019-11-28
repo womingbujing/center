@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\client\meau;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redis;
 use Excel;
+
+
 
 class UserController extends Controller
 {
@@ -17,10 +19,10 @@ class UserController extends Controller
      * @param int $id
      * @return Response
      */
-    public function showProfile($id)
+    public function showProfile(UsersSettingService $usersSettingService)
     {
-		$student = DB::select('select * from students');
-		var_dump($student);
+
+
     }
 
 }
