@@ -21,7 +21,7 @@ class IndexController extends Controller
     public function index(UsersService $usersService)
     {
         echo env('Host');
-       dd($usersService->getUser('2222'));
+       dd($usersService->getUser('22232'));
 
     }
 
