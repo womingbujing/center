@@ -29,6 +29,7 @@ class ConnectsController extends Controller
         ->select('request_domain','client_id')
         ->where('domain_key',$this->request->domain_key)
         ->first();
+		dd(1);
     }
     
     //添加对应关系
